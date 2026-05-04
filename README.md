@@ -1,4 +1,4 @@
-Student Performance Prediction using Machine Learning
+# Student Performance Prediction using Machine Learning
 
 Project Overview
 This project predicts student performance (Pass/Fail) using machine learning techniques.  
