@@ -1,0 +1,2 @@
+Logistic Regression Accuracy: 0.8562783661119516
+Decision Tree Accuracy: 0.7965204236006052
