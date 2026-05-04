@@ -72,19 +72,16 @@ student-performance-prediction-ml/
 ├── outputs/
 ├── src/ 
 ├── README.md
-├── requirements.txt
 ```
 
 
 ### How to Run
 
 1. Install dependencies:
-   
-   pip install -r requirements.txt
+   ``pip install -r requirements.txt``
 
 2. Run the project:
-   
-   python src/main.py
+   ``python src/main.py``
 
 ### Result
 Logistic Regression achieved about 83% accuracy in classifying students as pass or fail.
