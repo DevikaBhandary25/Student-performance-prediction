@@ -64,6 +64,7 @@ The dataset contains student academic and personal information.
 
 ### Project Structure
 
+```
 student-performance-prediction-ml/
 │
 ├── data/
@@ -72,6 +73,7 @@ student-performance-prediction-ml/
 ├── src/ 
 ├── README.md
 ├── requirements.txt
+```
 
 
 ### How to Run
