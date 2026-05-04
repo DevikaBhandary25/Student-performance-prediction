@@ -1,17 +1,18 @@
 # Student Performance Prediction using Machine Learning
 
-Project Overview
+### Project Overview
+
 This project predicts student performance (Pass/Fail) using machine learning techniques.  
 It analyzes academic data such as study hours, attendance, and previous scores to identify student outcomes.
 
 
-Objective
+### Objective
 - Predict student academic performance (Pass/Fail)
 - Compare different machine learning models
 - Identify important factors affecting student performance
 
 
-Technologies Used
+### Technologies Used
 - Python
 - Pandas
 - NumPy
