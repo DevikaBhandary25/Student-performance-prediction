@@ -22,24 +22,29 @@ It analyzes academic data such as study hours, attendance, and previous scores t
 - Visual Studio Code
 
 
-Dataset
+### Dataset
+
 The dataset contains student academic and personal information.
 
-Key Features Used:
+### Key Features Used:
+
 - Hours_Studied  
 - Attendance  
 - Previous_Scores  
 
-Target Variable:
+### Target Variable:
+
 - Final_Result (0 = Fail, 1 = Pass)  
 
 
-Models Used
+### Models Used
+
 1. Logistic Regression  
 2. Decision Tree  
 
 
-Methodology
+### Methodology
+
 1. Data preprocessing  
 2. Feature selection  
 3. Train-test split  
@@ -49,14 +54,16 @@ Methodology
 7. Visualization of results  
 
 
-Visualizations
+### Visualizations
+
 - Confusion Matrix  
 - Correlation Heatmap  
 - Feature Importance  
 - Model Comparison Graph  
 
 
-Project Structure
+### Project Structure
+
 student-performance-prediction-ml/
 │
 ├── data/
@@ -67,15 +74,18 @@ student-performance-prediction-ml/
 ├── requirements.txt
 
 
-How to Run
+### How to Run
+
 1. Install dependencies:
+   
    pip install -r requirements.txt
 
 2. Run the project:
+   
    python src/main.py
 
-Result
+### Result
 Logistic Regression achieved about 83% accuracy in classifying students as pass or fail.
 
-Conclusion
+### Conclusion
 This project demonstrates how machine learning can be used to analyze student data and improve academic outcomes through data-driven insights.
