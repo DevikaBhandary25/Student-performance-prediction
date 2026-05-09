@@ -120,3 +120,59 @@ for i, v in enumerate(accuracy):
 
 plt.savefig(os.path.join(graph_dir, 'model_comparison.png'))
 plt.close()
+
+# -------------------------------
+# GUI Prediction
+# -------------------------------
+
+import tkinter as tk
+from tkinter import messagebox
+
+def predict_result():
+
+    study_hours = float(entry_hours.get())
+    attendance = float(entry_attendance.get())
+    previous_scores = float(entry_scores.get())
+
+    new_student = [[study_hours, attendance, previous_scores]]
+
+    prediction = lr.predict(new_student)
+
+    if prediction[0] == 1:
+        messagebox.showinfo("Prediction", "Student will PASS")
+    else:
+        messagebox.showerror("Prediction", "Student will FAIL")
+
+# -------------------------------
+# GUI Window
+# -------------------------------
+
+root = tk.Tk()
+root.title("Student Performance Prediction")
+root.geometry("400x300")
+
+# Study Hours
+tk.Label(root, text="Study Hours").pack(pady=5)
+entry_hours = tk.Entry(root)
+entry_hours.pack()
+
+# Attendance
+tk.Label(root, text="Attendance").pack(pady=5)
+entry_attendance = tk.Entry(root)
+entry_attendance.pack()
+
+# Previous Scores
+tk.Label(root, text="Previous Scores").pack(pady=5)
+entry_scores = tk.Entry(root)
+entry_scores.pack()
+
+# Predict Button
+tk.Button(
+    root,
+    text="Predict Result",
+    command=predict_result,
+    bg="blue",
+    fg="white"
+).pack(pady=20)
+
+root.mainloop()
